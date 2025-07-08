@@ -1,17 +1,16 @@
-# 🚀 agents-api
+# agents-api
 
-Bem-vindo ao repositório `agents-api`! Este projeto é uma **API robusta e performática**, desenvolvida para gerenciar informações de agentes de forma eficiente. Construída com as melhores ferramentas do ecossistema Node.js, como **Fastify**, **Drizzle ORM** e **PostgreSQL**, ela oferece uma base sólida para suas aplicações.
+API construída com [Fastify](https://www.fastify.io/) e [Drizzle ORM](https://orm.drizzle.team/), utilizando TypeScript, validações com Zod e suporte ao PostgreSQL.
 
----
+## 📦 Stack Principal
 
-## ✨ Recursos Principais
-
-* **Performance Elevada**: Desenvolvida com Fastify, conhecida por sua velocidade e baixo overhead.
-* **Tipagem Forte**: Totalmente em TypeScript para um desenvolvimento mais seguro e com menos erros.
-* **ORM Intuitivo**: Utiliza Drizzle ORM para interações com o banco de dados de forma simples e poderosa.
-* **Banco de Dados Robusto**: Armazenamento de dados confiável com PostgreSQL.
-* **Validação de Dados**: Esquemas robustos com Zod para garantir a integridade dos dados.
-* **Estrutura Clara**: Código organizado e fácil de manter.
+- [Fastify](https://www.fastify.io/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Drizzle ORM](https://orm.drizzle.team/)
+- [Zod](https://github.com/colinhacks/zod)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Drizzle Kit](https://orm.drizzle.team/docs/overview/sql-schema)
+- [drizzle-seed](https://www.npmjs.com/package/drizzle-seed)
 
 ---
 
@@ -92,9 +91,9 @@ Você pode interagir com a API usando os seguintes comandos:
 
 ## 💻 Exemplo de Uso (Consumindo a API)
 
-Uma vez que a API esteja rodando (por exemplo, em `http://localhost:3000`), você pode começar a enviar requisições.
+Uma vez que a API esteja rodando (por exemplo, em `http://localhost:3333`), você pode começar a enviar requisições.
 
-**Exemplo: Obter todos os agentes**
+**Exemplo: Obter todos as salas**
 
 ```bash
-curl http://localhost:3000/agents
+curl http://localhost:3333/rooms
