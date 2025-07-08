@@ -1,6 +1,7 @@
-# agents-api
+# nlw-agents-api
 
-API construída com [Fastify](https://www.fastify.io/) e [Drizzle ORM](https://orm.drizzle.team/), utilizando TypeScript, validações com Zod e suporte ao PostgreSQL.
+API em desenvolvimento com [Fastify](https://www.fastify.io/) e [Drizzle ORM](https://orm.drizzle.team/), utilizando TypeScript, validações com Zod e suporte ao PostgreSQL.
+Projeto criado do zero no NLW#20 da Rocketseat — evento 100% online e gratuito.
 
 ## 📦 Stack Principal
 
