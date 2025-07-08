@@ -10,8 +10,8 @@ Projeto criado do zero no NLW#20 da Rocketseat — evento 100% online e gratuito
 - [Drizzle ORM](https://orm.drizzle.team/)
 - [Zod](https://github.com/colinhacks/zod)
 - [PostgreSQL](https://www.postgresql.org/)
-- [Drizzle Kit](https://orm.drizzle.team/docs/overview/sql-schema)
-- [drizzle-seed](https://www.npmjs.com/package/drizzle-seed)
+- [Drizzle Kit](https://www.npmjs.com/package/drizzle-kit)
+- [Drizzle Seed](https://www.npmjs.com/package/drizzle-seed)
 
 ---
 
@@ -94,7 +94,7 @@ Você pode interagir com a API usando os seguintes comandos:
 
 Uma vez que a API esteja rodando (por exemplo, em `http://localhost:3333`), você pode começar a enviar requisições.
 
-**Exemplo: Obter todos as salas**
+**Exemplo: Obter todas as salas**
 
 ```bash
 curl http://localhost:3333/rooms
