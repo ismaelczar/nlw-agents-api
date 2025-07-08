@@ -1,100 +1,58 @@
-# nlw-agents-api
+# NLW Agents API
 
-API em desenvolvimento com [Fastify](https://www.fastify.io/) e [Drizzle ORM](https://orm.drizzle.team/), utilizando TypeScript, validações com Zod e suporte ao PostgreSQL.
-Projeto criado do zero no NLW#20 da Rocketseat — evento 100% online e gratuito.
+![Rocketseat NLW](https://img.shields.io/badge/Evento-NLW%20Agents-8257E5?style=for-the-badge&logo=rocketseat)
 
-## 📦 Stack Principal
+## 🚀 Sobre o Projeto
 
-- [Fastify](https://www.fastify.io/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Drizzle ORM](https://orm.drizzle.team/)
-- [Zod](https://github.com/colinhacks/zod)
-- [PostgreSQL](https://www.postgresql.org/)
-- [Drizzle Kit](https://www.npmjs.com/package/drizzle-kit)
-- [Drizzle Seed](https://www.npmjs.com/package/drizzle-seed)
+Esta é a API desenvolvida durante o evento **Next Level Week (NLW) Agents**, uma iniciativa da [Rocketseat](https://www.rocketseat.com.br/). O projeto consiste em um backend robusto construído com as tecnologias mais modernas do ecossistema Node.js.
 
----
+O NLW é um evento intensivo de uma semana, focado em levar os desenvolvedores para o próximo nível, com muito código, desafios e networking.
 
-## 🚀 Começando
+## ✨ Tecnologias e Ferramentas
 
-Siga os passos abaixo para colocar a API rodando em sua máquina local.
+Este projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
+
+- **[Node.js](https://nodejs.org/en/)**: Ambiente de execução JavaScript no servidor.
+- **[TypeScript](https://www.typescriptlang.org/)**: Superset do JavaScript que adiciona tipagem estática, melhorando a manutenibilidade e a escalabilidade do código.
+- **[Fastify](https://www.fastify.io/)**: Um framework web para Node.js de alta performance, focado em velocidade e baixo overhead.
+- **[Zod](https://zod.dev/)**: Biblioteca para validação de esquemas com inferência de tipos em TypeScript, garantindo a integridade dos dados que entram e saem da API.
+- **[Biome](https://biomejs.dev/)**: Uma ferramenta de alta performance para formatação e linting do código, garantindo um padrão de qualidade e consistência.
+
+## 💻 Como Começar
+
+Siga os passos abaixo para executar o projeto localmente.
 
 ### Pré-requisitos
 
-Certifique-se de que você tem as seguintes ferramentas instaladas:
-
-* **Node.js**: Versão 20 ou superior (recomendado).
-* **npm** (ou Yarn/pnpm): Gerenciador de pacotes.
-* **PostgreSQL**: Servidor de banco de dados rodando e acessível.
+- [Node.js](https://nodejs.org/en/) (versão 20.x ou superior)
+- [npm](https://www.npmjs.com/) ou outro gerenciador de pacotes
 
 ### Instalação
 
-1.  **Clone o repositório:**
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/ismaelczar/nlw-agents-api.git
+   cd nlw-agents-api
+   ```
 
-    ```bash
-    git clone https://github.com/ismaelczar/agents-api.git
-    cd agents-api
-    ```
+2. Instale as dependências do projeto:
+   ```bash
+   npm install
+   ```
 
-2.  **Instale as dependências:**
+3. Configure as variáveis de ambiente:
+   - Renomeie o arquivo `.env.example` para `.env`.
+   - Se houver variáveis de ambiente necessárias (como `DATABASE_URL`), preencha-as com os valores corretos.
 
-    ```bash
-    npm install
-    # ou yarn install
-    # ou pnpm install
-    ```
+### Executando a Aplicação
 
-3.  **Configuração do Ambiente (`.env`)**:
+Para iniciar o servidor em modo de desenvolvimento, execute o comando:
 
-    Crie um arquivo `.env` na raiz do projeto com suas variáveis de ambiente. É crucial configurar a string de conexão com o seu banco de dados PostgreSQL.
-
-    Antes de iniciar o projeto, é necessário configurar as variáveis de ambiente. Para isso, copie o arquivo `.env.example` e renomeie para `.env`:
-
-### 
 ```bash
-# No Linux/macOS:
-cp .env.example .env
-
-# No Windows (cmd)
-copy .env.example .env
-
+npm run dev
 ```
 
-## 🛠️ Como Usar
+A API estará disponível em `http://localhost:3333`.
 
-Você pode interagir com a API usando os seguintes comandos:
 
-* ### `npm run dev`
 
-    Inicia o servidor em **modo de desenvolvimento**. Ele inclui `hot-reloading`, o que significa que o servidor reiniciará automaticamente a cada alteração de código que você fizer.
-
-    ```bash
-    npm run dev
-    ```
-
-* ### `npm start`
-
-    Inicia o servidor em **modo de produção**. Ideal para ambientes de deploy, com otimizações de performance.
-
-    ```bash
-    npm start
-    ```
-
-* ### `npm run db:seed`
-
-    Popula seu banco de dados com dados iniciais. Útil para testar a API rapidamente sem precisar criar dados manualmente.
-
-    ```bash
-    npm run db:seed
-    ```
-
----
-
-## 💻 Exemplo de Uso (Consumindo a API)
-
-Uma vez que a API esteja rodando (por exemplo, em `http://localhost:3333`), você pode começar a enviar requisições.
-
-**Exemplo: Obter todas as salas**
-
-```bash
-curl http://localhost:3333/rooms
